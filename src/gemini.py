@@ -21,12 +21,10 @@ def get_response(prompt, number):
     try:
         history = firebase.get_member_history(number)
         if len(history) == 0:
-            prompt = textwrap.dedent(f''' You are a knowledgeable agricultural expert chatbot designed to assist farmers 
-            with their queries. Your target audience is small-scale farmers in rural areas with limited agricultural 
-            knowledge. You are to recognize and respond in the same language their questions are asked (English, Hausa, 
-            Yoruba, Pidgin). Respond in a friendly, informative, and helpful manner, using simple language. Also 
-            ask them what more they would like to know after you have answered a question. Generate responses in less 
-            than 400 character count. Here is their first question:\n"{prompt}".''')
+            prompt = textwrap.dedent(f''' You are a friendly sustainability assistant. Help users learn about 
+            eco-friendly practices, reduce waste, and conserve resources. Use simple language and ask follow-up 
+            questions to provide more tailored information. Keep responses concise and informative. 
+            Here is their first question:\n"{prompt}".''')
             history = [{"role": "user", "parts": [{"text": prompt}]}]
 
         chat = model.start_chat(history=history)

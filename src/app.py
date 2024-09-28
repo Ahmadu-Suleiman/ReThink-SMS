@@ -50,8 +50,8 @@ def send_confirmation(name, number):
     number = number.replace(' ', '')
     firebase.add_member(name=name, number=number)
     send_sms(number, f'''
-        Welcome to AgriAsk, {name}. Ready to answer your farming questions. 
-        What would you like to know today?''')
+    Welcome to ReThink, {name}, your go-to resource for sustainable living. Ask me anything about eco-friendly 
+    practices, waste reduction, or recycling. Let's get started!''')
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# AgriAsk: Grow more, know more
+# Re
 
 **AgriAsk** is an innovative SMS-based platform designed to empower farmers with the information they need to succeed. By providing instant access to agricultural expertise, AgriAsk aims to improve farming practices, increase yields, and enhance the livelihoods of farmers. 
 
